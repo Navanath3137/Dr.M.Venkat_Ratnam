@@ -16,23 +16,38 @@ export default function Publications() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 text-center border border-gray-200 dark:border-gray-800">
-            <BookOpen className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
+          <a 
+            href="https://scholar.google.com/citations?user=eLx3sMcAAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white dark:bg-gray-900 rounded-2xl p-8 text-center border border-gray-200 dark:border-gray-800 hover:shadow-xl hover:border-yellow-400 transition-all duration-300 group"
+          >
+            <BookOpen className="w-12 h-12 text-yellow-500 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
             <div className="text-3xl font-bold text-gray-900 dark:text-white mb-2">{scholarData.i10Index}</div>
             <div className="text-gray-600 dark:text-gray-400">i10-index</div>
-          </div>
+          </a>
 
-          <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 text-center border border-gray-200 dark:border-gray-800">
-            <FileText className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
+          <a 
+            href="https://scholar.google.com/citations?user=eLx3sMcAAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white dark:bg-gray-900 rounded-2xl p-8 text-center border border-gray-200 dark:border-gray-800 hover:shadow-xl hover:border-yellow-400 transition-all duration-300 group"
+          >
+            <FileText className="w-12 h-12 text-yellow-500 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
             <div className="text-3xl font-bold text-gray-900 dark:text-white mb-2">{scholarData.citations}</div>
             <div className="text-gray-600 dark:text-gray-400">Total Citations</div>
-          </div>
+          </a>
 
-          <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 text-center border border-gray-200 dark:border-gray-800">
-            <ExternalLink className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
+          <a 
+            href="https://scholar.google.com/citations?user=eLx3sMcAAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white dark:bg-gray-900 rounded-2xl p-8 text-center border border-gray-200 dark:border-gray-800 hover:shadow-xl hover:border-yellow-400 transition-all duration-300 group"
+          >
+            <ExternalLink className="w-12 h-12 text-yellow-500 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
             <div className="text-3xl font-bold text-gray-900 dark:text-white mb-2">{scholarData.hIndex}</div>
             <div className="text-gray-600 dark:text-gray-400">h-index</div>
-          </div>
+          </a>
         </div>
 
         <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-gray-800">
