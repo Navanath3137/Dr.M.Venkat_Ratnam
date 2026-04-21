@@ -1,4 +1,5 @@
 import { BookOpen, ExternalLink, FileText } from 'lucide-react';
+import scholarData from '../data/scholar.json';
 
 export default function Publications() {
   return (
@@ -17,19 +18,19 @@ export default function Publications() {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 text-center border border-gray-200 dark:border-gray-800">
             <BookOpen className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
-            <div className="text-3xl font-bold text-gray-900 dark:text-white mb-2">300+</div>
-            <div className="text-gray-600 dark:text-gray-400">Research Papers</div>
+            <div className="text-3xl font-bold text-gray-900 dark:text-white mb-2">{scholarData.i10Index}</div>
+            <div className="text-gray-600 dark:text-gray-400">i10-index</div>
           </div>
 
           <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 text-center border border-gray-200 dark:border-gray-800">
             <FileText className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
-            <div className="text-3xl font-bold text-gray-900 dark:text-white mb-2">10,000+</div>
+            <div className="text-3xl font-bold text-gray-900 dark:text-white mb-2">{scholarData.citations}</div>
             <div className="text-gray-600 dark:text-gray-400">Total Citations</div>
           </div>
 
           <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 text-center border border-gray-200 dark:border-gray-800">
             <ExternalLink className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
-            <div className="text-3xl font-bold text-gray-900 dark:text-white mb-2">75+</div>
+            <div className="text-3xl font-bold text-gray-900 dark:text-white mb-2">{scholarData.hIndex}</div>
             <div className="text-gray-600 dark:text-gray-400">h-index</div>
           </div>
         </div>
