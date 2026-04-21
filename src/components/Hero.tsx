@@ -13,7 +13,7 @@ export default function Hero() {
               <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center overflow-hidden">
                 {!imageError ? (
                   <img 
-                    src={`${import.meta.env.BASE_URL}Ratnam1.jpeg`}
+                    src={`${import.meta.env.BASE_URL}Ratnam_Photo.jpg`}
                     alt="Dr. M Venkat Ratnam" 
                     className="w-full h-full object-cover"
                     onError={() => setImageError(true)}
