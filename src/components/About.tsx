@@ -59,7 +59,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/3 h-80 md:h-auto">
               <img 
-                src="/Ratnam2.jpeg" 
+                src={`${import.meta.env.BASE_URL}Ratnam2.jpeg`} 
                 alt="Dr. M Venkat Ratnam" 
                 className="w-full h-full object-cover"
               />
