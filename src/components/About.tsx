@@ -55,21 +55,32 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mt-16 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 md:p-12">
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-            Dr. M Venkat Ratnam is a distinguished scientist at the National Atmospheric
-            Research Laboratory, known for his pioneering work in atmospheric science.
-            His research encompasses a wide range of topics including atmospheric boundary
-            layer studies, gravity waves, atmospheric turbulence, and the dynamics of the
-            tropical atmosphere.
-          </p>
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            With numerous high-impact publications and international collaborations,
-            Dr. Ratnam has significantly contributed to our understanding of atmospheric
-            processes and their implications for weather prediction and climate modeling.
-            His work has been recognized through prestigious awards including the
-            Shanti Swarup Bhatnagar Prize, India's highest science award.
-          </p>
+        <div className="mt-16 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl overflow-hidden">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-1/3 h-80 md:h-auto">
+              <img 
+                src="/Ratnam2.jpeg" 
+                alt="Dr. M Venkat Ratnam" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="md:w-2/3 p-8 md:p-12">
+              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                Dr. M Venkat Ratnam is a distinguished scientist at the National Atmospheric
+                Research Laboratory, known for his pioneering work in atmospheric science.
+                His research encompasses a wide range of topics including atmospheric boundary
+                layer studies, gravity waves, atmospheric turbulence, and the dynamics of the
+                tropical atmosphere.
+              </p>
+              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                With numerous high-impact publications and international collaborations,
+                Dr. Ratnam has significantly contributed to our understanding of atmospheric
+                processes and their implications for weather prediction and climate modeling.
+                His work has been recognized through prestigious awards including the
+                Shanti Swarup Bhatnagar Prize, India's highest science award.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -6,9 +6,13 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <div className="mb-8 inline-block">
-            <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 p-1">
-              <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center">
-                <span className="text-6xl font-bold text-gray-900 dark:text-white">MVR</span>
+            <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 p-1 overflow-hidden">
+              <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/Ratnam.jpeg" 
+                  alt="Dr. M Venkat Ratnam" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
