@@ -51,7 +51,7 @@ export default function Hero() {
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://en.wikipedia.org/wiki/M._Venkat_Ratnam"
+              href="https://en.wikipedia.org/wiki/Madineni_Venkat_Ratnam"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl"
@@ -60,7 +60,7 @@ export default function Hero() {
               <ExternalLink className="w-4 h-4" />
             </a>
             <a
-              href="https://scholar.google.com"
+              href="https://scholar.google.com/citations?user=eLx3sMcAAAAJ&hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-400 text-gray-900 rounded-lg hover:bg-yellow-500 transition-all duration-200 shadow-lg hover:shadow-xl"
