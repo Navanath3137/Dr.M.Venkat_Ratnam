@@ -1,35 +1,44 @@
-import { Award, Trophy, Medal, Star } from 'lucide-react';
+import { Award, Trophy, Medal, Star, Users, ClipboardCheck } from 'lucide-react';
 
 export default function Awards() {
   const awards = [
     {
       icon: Trophy,
       title: 'Shanti Swarup Bhatnagar Prize',
-      year: 'Recent',
-      description: 'India\'s highest science award, presented by the Prime Minister for outstanding contributions to atmospheric sciences.',
+      year: '2018',
+      description: 'India\'s highest science award in Earth, Atmosphere, Ocean and Planetary Sciences, presented for outstanding contributions.',
       highlight: true,
     },
     {
       icon: Medal,
-      title: 'CSIR Young Scientist Award',
-      year: 'Previous',
-      description: 'Recognition for exceptional research contributions in the early career.',
+      title: 'NASA Group Achievement Award',
+      year: '2019',
+      description: 'For the Balloon measurement campaign of the Asian Tropopause Aerosol Layer (BATAL).',
       highlight: false,
     },
     {
       icon: Star,
-      title: 'Best Paper Awards',
-      year: 'Multiple Years',
-      description: 'Several prestigious awards for outstanding research publications in top-tier journals.',
+      title: 'NASI-SCOPUS Young Scientist Award',
+      year: '2010',
+      description: 'Awarded under Earth and Oceanography category by National Academy of Sciences, India and Elsevier.',
       highlight: false,
     },
     {
       icon: Award,
-      title: 'International Recognition',
-      year: 'Ongoing',
-      description: 'Invited speaker at major international conferences and symposia worldwide.',
+      title: 'Fellow, AP Academy of Sciences',
+      year: '2012',
+      description: 'In recognition of significant contributions made to Science and Technology.',
       highlight: false,
     },
+  ];
+
+  const recognitions = [
+    'Advisory Committee member - UNEP Ozone Secretariat',
+    'Chair - SCOSTEP award nomination committee',
+    'Advisory panel member - South Asian Meteorological Association (SAMA)',
+    'Expert Member - DST Inspire Fellow selections',
+    'Editorial Board member of several prestigious journals',
+    'Scientific Discipline Representatives (SDR) of SCOSTEP from India',
   ];
 
   return (
@@ -45,7 +54,7 @@ export default function Awards() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-20">
           {awards.map((award, index) => {
             const Icon = award.icon;
             return (
@@ -54,7 +63,7 @@ export default function Awards() {
                 className={`rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 ${
                   award.highlight
                     ? 'bg-gradient-to-br from-yellow-400 to-yellow-600 shadow-2xl'
-                    : 'bg-gray-50 dark:bg-gray-800 hover:shadow-xl'
+                    : 'bg-gray-50 dark:bg-gray-800 hover:shadow-xl border border-transparent dark:hover:border-yellow-400/30'
                 }`}
               >
                 <div className="flex items-start gap-6">
@@ -75,7 +84,7 @@ export default function Awards() {
                     <div
                       className={`text-sm font-semibold mb-2 ${
                         award.highlight
-                          ? 'text-gray-900'
+                          ? 'text-gray-900/80'
                           : 'text-yellow-500'
                       }`}
                     >
@@ -106,12 +115,32 @@ export default function Awards() {
           })}
         </div>
 
-        <div className="mt-16 text-center">
-          <div className="inline-block bg-gray-50 dark:bg-gray-800 rounded-2xl px-8 py-6">
-            <p className="text-lg text-gray-700 dark:text-gray-300">
-              These accolades reflect a commitment to scientific excellence and innovation
-              in understanding Earth's atmosphere
-            </p>
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-gray-700">
+          <div className="flex flex-col md:flex-row gap-12">
+            <div className="flex-1">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-3">
+                <ClipboardCheck className="text-yellow-500" />
+                Professional Recognitions
+              </h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {recognitions.map((item, idx) => (
+                  <div key={idx} className="flex items-start gap-3">
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-2.5 flex-shrink-0" />
+                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                      {item}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="md:w-1/3 flex flex-col justify-center items-center p-8 bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 text-center">
+              <Users className="w-12 h-12 text-yellow-500 mb-4" />
+              <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Scientific Societies</h4>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Life Member of IMS, IASTA, Indian Science Congress Association, and Member of AGU.
+              </p>
+            </div>
           </div>
         </div>
       </div>

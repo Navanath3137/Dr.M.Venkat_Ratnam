@@ -52,30 +52,43 @@ export default function Publications() {
 
         <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-gray-800">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            Selected Publications
+            Selected High-Impact Publications
           </h3>
           <div className="space-y-6">
             <div className="border-l-4 border-yellow-400 pl-6 py-2">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                High-impact research on atmospheric boundary layer dynamics and their role
-                in tropical weather systems
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed font-medium">
+                Validation of INSAT-3D sounder data with in situ measurements and other 
+                similar satellite observations over India
+              </p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                Atmospheric Measurement Techniques, 2016
               </p>
             </div>
             <div className="border-l-4 border-yellow-400 pl-6 py-2">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                Pioneering studies on gravity wave propagation and their effects on
-                atmospheric circulation
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed font-medium">
+                Effect of tropical cyclones on the stratosphere–troposphere exchange 
+                observed using satellite observations over the north Indian Ocean
+              </p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                Atmospheric Chemistry and Physics, 2016
               </p>
             </div>
             <div className="border-l-4 border-yellow-400 pl-6 py-2">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                Advanced radar meteorology techniques for improved weather prediction
-                and climate modeling
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed font-medium">
+                Characteristics of monsoon inversions over the Arabian Sea observed 
+                by satellite sounder and reanalysis data sets
+              </p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                Atmospheric Chemistry and Physics, 2016
               </p>
             </div>
             <div className="border-l-4 border-yellow-400 pl-6 py-2">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                Comprehensive analysis of monsoon dynamics and tropical convection systems
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed font-medium">
+                Diurnal variability of stability indices observed using radiosonde 
+                observations over a tropical station
+              </p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                Atmospheric Research, 2013
               </p>
             </div>
           </div>
