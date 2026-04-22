@@ -1,4 +1,5 @@
 import { Cloud, Wind, Waves, Thermometer, Radio, Globe, GraduationCap, Handshake } from 'lucide-react';
+import WorldMap from './WorldMap';
 
 export default function Research() {
   const researchAreas = [
@@ -118,6 +119,16 @@ export default function Research() {
               ))}
             </div>
           </div>
+        </div>
+
+        <div className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <Globe className="w-8 h-8 text-yellow-500" />
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
+              Global Research Footprint
+            </h3>
+          </div>
+          <WorldMap />
         </div>
 
         <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-gray-800">
